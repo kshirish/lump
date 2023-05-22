@@ -1,0 +1,21 @@
+{
+  "name": "@lump/utils",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.js*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.15.0",
+    "@lump/eslint-config-custom": "workspace:*",
+    "vite": "^4.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

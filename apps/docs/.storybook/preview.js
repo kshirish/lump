@@ -1,6 +1,10 @@
+// import '../src/tailwind.css';
+
+import '@lump/ui/style.css';
+
 const preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,

@@ -4,13 +4,15 @@ A lump of experiments within monorepo
 
 _/app_
 
-1. storybook
+1. docs (storybook)
+2. app1 (react)
 
 _/packages_
 
 1. eslint config
-2. core - shared ui library
-3. utils - shared utils
+2. tailwind config
+3. ui (shared library)
+4. utils (shared)
 
 ### Useful Commands
 

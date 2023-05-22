@@ -1,0 +1,33 @@
+{
+  "name": "@lump/ui",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui.js",
+  "exports": {
+    ".": "./dist/ui.mjs",
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint \"src/**/*.js*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "@lump/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.15.0",
+    "@lump/eslint-config-custom": "workspace:*",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.20",
+    "@lump/tailwind-config": "workspace:*",
+    "vite": "^4.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
