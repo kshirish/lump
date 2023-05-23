@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ children }) => {
   return (
-    <button type="button" className="p-2 bg-blue-400">
+    <button type="button" className="bg-pink-600">
       {children}
     </button>
   );

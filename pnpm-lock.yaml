@@ -163,21 +163,12 @@ importers:
       '@lump/eslint-config-custom':
         specifier: workspace:*
         version: link:../eslint-config-custom
-      '@lump/tailwind-config':
-        specifier: workspace:*
-        version: link:../tailwind-config
       '@vitejs/plugin-react':
         specifier: ^4.0.0
         version: 4.0.0(vite@4.3.2)
-      autoprefixer:
-        specifier: ^10.4.14
-        version: 10.4.14(postcss@8.4.20)
       eslint:
         specifier: ^8.15.0
         version: 8.38.0
-      postcss:
-        specifier: ^8.4.20
-        version: 8.4.20
       vite:
         specifier: ^4.3.2
         version: 4.3.2(less@4.1.3)

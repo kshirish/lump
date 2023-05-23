@@ -14,6 +14,16 @@ _/packages_
 3. ui (shared library)
 4. utils (shared)
 
+### Getting Started
+
+```
+pnpm i
+```
+
+```
+pnpm run dev
+```
+
 ### Useful Commands
 
 - `pnpm run build` - Build all packages, including the Storybook site

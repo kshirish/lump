@@ -1,7 +1,5 @@
 import '../src/tailwind.css';
 
-import '@lump/ui/src/globals.css';
-
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
