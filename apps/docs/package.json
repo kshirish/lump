@@ -1,20 +1,21 @@
 {
   "name": "docs",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@lump/ui": "workspace:*",
     "@lump/utils": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
+    "@lump/eslint-config-custom": "workspace:*",
+    "@lump/tailwind-config": "workspace:*",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
@@ -25,8 +26,6 @@
     "@storybook/testing-library": "0.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.20",
-    "storybook": "^7.0.12",
-    "@lump/tailwind-config": "workspace:*",
-    "@lump/eslint-config-custom": "workspace:*"
+    "storybook": "^7.0.12"
   }
 }

@@ -1,21 +1,8 @@
-import { Button } from '@lump/ui';
+import { Button } from '@lump/ui/src';
 
 export default {
   title: 'Example/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
-export const Primary = {
-  args: {
-    children: 'Primary Button',
-  },
-};
-
-export const Secondary = {
-  args: {
-    children: 'Secondary Button',
-  },
-};
+export const Primary = () => <Button>Primary Button</Button>;

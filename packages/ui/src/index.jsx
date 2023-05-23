@@ -1,7 +1,5 @@
 import './globals.css';
 
-import Button from './components/Button';
-import Header from './components/Header';
-import Page from './components/Page';
+import Button from './Button';
 
-export { Button, Header, Page };
+export { Button };

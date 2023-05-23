@@ -1,5 +1,9 @@
 {
   "name": "@lump/utils",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./dist/utils.mjs"
+  },
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",

@@ -4,20 +4,12 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    {
-      name: '@storybook/addon-styling',
-      options: {
-        postCss: true,
-      },
-    },
+    '@storybook/addon-styling',
   ],
   framework: {
     name: '@storybook/react-vite',
     options: {},
   },
-  // docs: {
-  //   autodocs: 'tag',
-  // },
 };
 
 export default config;
