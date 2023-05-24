@@ -1,3 +1,3 @@
-import Button from './Button';
-
-export { Button };
+export { default as Button } from './Button';
+export { default as Text } from './Text';
+export { default as Stack } from './Stack';
