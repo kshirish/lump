@@ -4,20 +4,20 @@ import classNames from 'classnames';
 
 const variantMap = {
   filled: {
-    primary: 'text-white bg-primary',
-    secondary: 'text-white bg-secondary',
+    primary: 'ui-text-white ui-bg-primary',
+    secondary: 'ui-text-white ui-bg-secondary',
   },
   outlined: {
-    primary: 'border border-primary text-primary',
-    secondary: 'border border-secondary text-secondary',
+    primary: 'ui-border ui-border-primary ui-text-primary',
+    secondary: 'ui-border ui-border-secondary ui-text-secondary',
   },
-  text: { primary: 'text-primary', secondary: 'text-secondary' },
+  text: { primary: 'ui-text-primary', secondary: 'ui-text-secondary' },
 };
 
 const sizeMap = {
-  sm: 'px-2 py-0.5 text-xs',
-  md: 'px-3 py-1 test-sm',
-  lg: 'px-4 py-2 text-base',
+  sm: 'ui-px-2 ui-py-0.5 ui-text-xs',
+  md: 'ui-px-3 ui-py-1 ui-text-sm',
+  lg: 'ui-px-4 ui-py-2 ui-text-base',
 };
 
 const Button = (props) => {
@@ -28,9 +28,15 @@ const Button = (props) => {
   return (
     <button
       type="button"
-      className={classNames('rounded', variantClass, sizeClass, {
-        'pointer-events-none': props.disabled,
-      })}
+      className={classNames(
+        'ui-rounded',
+        variantClass,
+        sizeClass,
+        {
+          'ui-pointer-events-none': props.disabled,
+        },
+        props.className,
+      )}
     >
       {props.children}
     </button>

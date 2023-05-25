@@ -2,23 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+const colorMap = {
+  dark: 'ui-text-dark',
+  light: 'ui-text-light',
+  white: 'ui-text-white',
+  success: 'ui-text-success',
+  danger: 'ui-text-danger',
+  info: 'ui-text-info',
+  warning: 'ui-text-warning',
+};
+
 const variantMap = {
-  heading1: 'text-4xl',
-  heading2: 'text-3xl',
-  heading3: 'text-2xl',
-  heading4: 'text-xl',
-  heading5: 'text-lg',
-  base: 'text-base',
-  body1: 'text-sm',
-  body2: 'text-xs font-medium',
+  heading1: 'ui-text-4xl',
+  heading2: 'ui-text-3xl',
+  heading3: 'ui-text-2xl',
+  heading4: 'ui-text-xl',
+  heading5: 'ui-text-lg',
+  base: 'ui-text-base',
+  body1: 'ui-text-sm',
+  body2: 'ui-text-xs font-medium',
 };
 
 const Text = (props) => {
   const variantClass = variantMap[props.variant || 'base'];
-  const colorClass = `text-${props.color || 'dark'}`;
+  const colorClass = colorMap[props.color || 'dark'];
 
   return (
-    <div className={classNames(variantClass, colorClass)}>{props.children}</div>
+    <div className={classNames(variantClass, colorClass, props.className)}>
+      {props.children}
+    </div>
   );
 };
 
@@ -29,6 +41,7 @@ Text.propTypes = {
     'heading2',
     'heading3',
     'heading4',
+    'heading5',
     'base',
     'body1',
     'body2',

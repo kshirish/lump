@@ -1,4 +1,4 @@
-import { Text } from '@lump/ui/src';
+import { Stack, Text } from '@lump/ui';
 
 export default {
   title: 'Example/Text',
@@ -6,7 +6,7 @@ export default {
 };
 
 export const Variants = () => (
-  <>
+  <Stack direction="col" spacing={2}>
     <Text variant="heading1">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     </Text>
@@ -33,11 +33,11 @@ export const Variants = () => (
     <Text variant="body2">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     </Text>
-  </>
+  </Stack>
 );
 
 export const Colors = () => (
-  <>
+  <Stack direction="col" spacing={2}>
     <Text variant="base" color="light">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
@@ -65,5 +65,5 @@ export const Colors = () => (
     <Text variant="body2" color="info">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-  </>
+  </Stack>
 );

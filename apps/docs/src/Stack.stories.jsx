@@ -1,4 +1,4 @@
-import { Stack } from '@lump/ui/src';
+import { Stack, Paper } from '@lump/ui';
 
 export default {
   title: 'Example/Stack',
@@ -6,13 +6,28 @@ export default {
 };
 
 const Item1 = () => (
-  <div className="w-72 border border-black p-6 bg-blue-500">Item 1</div>
+  <Paper className="border border-info">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatum
+    reiciendis quas accusantium nisi blanditiis, consectetur ab, modi magnam
+    porro veniam dolor architecto veritatis consequuntur sit, dicta numquam.
+    Consequatur, ipsa!
+  </Paper>
 );
 const Item2 = () => (
-  <div className="w-64 border border-black p-6 bg-yellow-500">Item 2</div>
+  <Paper className="border border-warning">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatum
+    reiciendis quas accusantium nisi blanditiis, consectetur ab, modi magnam
+    porro veniam dolor architecto veritatis consequuntur sit, dicta numquam.
+    Consequatur, ipsa!
+  </Paper>
 );
 const Item3 = () => (
-  <div className="w-96 border border-black p-6 bg-green-500">Item 3</div>
+  <Paper className="border border-success">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatum
+    reiciendis quas accusantium nisi blanditiis, consectetur ab, modi magnam
+    porro veniam dolor architecto veritatis consequuntur sit, dicta numquam.
+    Consequatur, ipsa!
+  </Paper>
 );
 
 export const Example1 = () => (

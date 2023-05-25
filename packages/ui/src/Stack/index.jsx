@@ -2,25 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+const directionMap = {
+  row: 'ui-flex-row',
+  'row-reverse': 'ui-flex-row-reverse',
+  col: 'ui-flex-col',
+  'col-reverse': 'ui-flex-col-reverse',
+};
+
 const justifyContentMap = {
-  'flex-start': 'justify-start',
-  center: 'justify-center',
-  'flex-end': 'justify-end',
-  'space-between': 'justify-between',
-  'space-around': 'justify-around',
-  'space-evenly': 'justify-evenly',
+  'flex-start': 'ui-justify-start',
+  center: 'ui-justify-center',
+  'flex-end': 'ui-justify-end',
+  'space-between': 'ui-justify-between',
+  'space-around': 'ui-justify-around',
+  'space-evenly': 'ui-justify-evenly',
 };
 
 const alignItemsMap = {
-  'flex-start': 'items-start',
-  center: 'items-center',
-  'flex-end': 'items-end',
-  stretch: 'items-stretch',
-  baseline: 'items-baseline',
+  'flex-start': 'ui-items-start',
+  center: 'ui-items-center',
+  'flex-end': 'ui-items-end',
+  stretch: 'ui-items-stretch',
+  baseline: 'ui-items-baseline',
 };
 
 const Stack = (props) => {
-  const directionClass = `flex-${props.direction || 'row'}`;
+  const directionClass = directionMap[props.direction || 'row'];
   const justifyContentClass =
     justifyContentMap[props.justifyContent || 'flex-start'];
   const alignItemsClass = alignItemsMap[props.alignItems || 'flex-start'];
@@ -28,13 +35,14 @@ const Stack = (props) => {
   return (
     <div
       className={classNames(
-        'flex',
+        'ui-flex',
         directionClass,
         justifyContentClass,
         alignItemsClass,
         {
-          'flex-wrap': props.wrap,
+          'ui-flex-wrap': props.wrap,
         },
+        props.className,
       )}
       style={{ gap: 8 * (props.spacing || 0) }}
     >

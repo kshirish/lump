@@ -1,4 +1,4 @@
-import Button from '@lump/ui/src/Button';
+import { Button } from '@lump/ui';
 // import { sum, subtract } from '@lump/utils';
 
 const App = () => {

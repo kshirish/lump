@@ -2,5 +2,6 @@ const sharedConfig = require('@lump/tailwind-config/tailwind.config.js');
 
 module.exports = {
   ...sharedConfig,
-  content: ['src/**/*.{js,jsx}'],
+  prefix: 'ui-',
+  content: ['src/**/*.{js,jsx}', '../../packages/**/*.{js,jsx}'],
 };
