@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Input, Stack } from '@lump/ui';
+import { Input } from '@lump/ui';
 
 export default {
   title: 'Example/Input',
@@ -50,6 +50,7 @@ export const Controlled = () => {
     <Input
       type="number"
       label="Age"
+      helperText="Try entering less than 18"
       value={age}
       error={error}
       onChange={handleChange}
