@@ -20,10 +20,16 @@ const sizeMap = {
   lg: 'ui-px-4 ui-py-2 ui-text-base',
 };
 
-const Button = (props) => {
-  const variantClass =
-    variantMap[props.variant || 'filled'][props.color || 'primary'];
-  const sizeClass = sizeMap[props.size || 'md'];
+const Button = ({
+  variant = 'filled',
+  color = 'primary',
+  size = 'md',
+  children,
+  disabled = false,
+  className,
+}) => {
+  const variantClass = variantMap[variant][color];
+  const sizeClass = sizeMap[size];
 
   return (
     <button
@@ -33,12 +39,12 @@ const Button = (props) => {
         variantClass,
         sizeClass,
         {
-          'ui-pointer-events-none': props.disabled,
+          'ui-pointer-events-none': disabled,
         },
-        props.className,
+        className,
       )}
     >
-      {props.children}
+      {children}
     </button>
   );
 };

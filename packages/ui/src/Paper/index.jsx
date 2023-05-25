@@ -12,19 +12,18 @@ const elevationMap = [
   'ui-shadow-2xl',
 ];
 
-const Paper = (props) => {
-  const elevationClass =
-    elevationMap[props.elevation ? props.elevation - 1 : 0];
+const Paper = ({ elevation, children, className }) => {
+  const elevationClass = elevationMap[elevation ? elevation - 1 : 0];
 
   return (
     <div
       className={classNames(
         'ui-p-4 ui-bg-white ui-rounded-md',
         elevationClass,
-        props.className,
+        className,
       )}
     >
-      {props.children}
+      {children}
     </div>
   );
 };

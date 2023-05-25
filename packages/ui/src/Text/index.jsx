@@ -20,16 +20,16 @@ const variantMap = {
   heading5: 'ui-text-lg',
   base: 'ui-text-base',
   body1: 'ui-text-sm',
-  body2: 'ui-text-xs font-medium',
+  body2: 'ui-text-xs ui-font-medium',
 };
 
-const Text = (props) => {
-  const variantClass = variantMap[props.variant || 'base'];
-  const colorClass = colorMap[props.color || 'dark'];
+const Text = ({ variant = 'base', color = 'dark', children, className }) => {
+  const variantClass = variantMap[variant];
+  const colorClass = colorMap[color];
 
   return (
-    <div className={classNames(variantClass, colorClass, props.className)}>
-      {props.children}
+    <div className={classNames(variantClass, colorClass, className)}>
+      {children}
     </div>
   );
 };

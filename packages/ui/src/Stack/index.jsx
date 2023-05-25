@@ -26,11 +26,18 @@ const alignItemsMap = {
   baseline: 'ui-items-baseline',
 };
 
-const Stack = (props) => {
-  const directionClass = directionMap[props.direction || 'row'];
-  const justifyContentClass =
-    justifyContentMap[props.justifyContent || 'flex-start'];
-  const alignItemsClass = alignItemsMap[props.alignItems || 'flex-start'];
+const Stack = ({
+  direction = 'row',
+  justifyContent = 'flex-start',
+  alignItems = 'flex-start',
+  spacing = 0,
+  wrap,
+  children,
+  className,
+}) => {
+  const directionClass = directionMap[direction];
+  const justifyContentClass = justifyContentMap[justifyContent];
+  const alignItemsClass = alignItemsMap[alignItems];
 
   return (
     <div
@@ -40,13 +47,13 @@ const Stack = (props) => {
         justifyContentClass,
         alignItemsClass,
         {
-          'ui-flex-wrap': props.wrap,
+          'ui-flex-wrap': wrap,
         },
-        props.className,
+        className,
       )}
-      style={{ gap: 8 * (props.spacing || 0) }}
+      style={{ gap: 8 * spacing }}
     >
-      {props.children}
+      {children}
     </div>
   );
 };

@@ -8,14 +8,15 @@ const sizeMap = {
   lg: 'ui-h-12 ui-w-12',
 };
 
-const Loader = (props) => {
-  const sizeClass = sizeMap[props.size || 'md'];
+const Loader = ({ size = 'md', className }) => {
+  const sizeClass = sizeMap[size];
 
   return (
     <div
       className={classNames(
         'ui-inline-block ui-animate-spin ui-rounded-full ui-border-4 ui-border-solid ui-border-primary ui-border-r-transparent',
         sizeClass,
+        className,
       )}
     />
   );
