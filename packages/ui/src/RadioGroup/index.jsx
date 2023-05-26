@@ -5,7 +5,7 @@ import { Stack, Text } from '../';
 
 export const RadioContext = createContext();
 
-const RadioGroup = ({
+export const RadioGroup = ({
   label,
   name,
   value,
@@ -48,5 +48,3 @@ RadioGroup.propTypes = {
   ]).isRequired,
   onChange: PropTypes.func,
 };
-
-export default RadioGroup;

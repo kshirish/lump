@@ -26,7 +26,7 @@ const alignItemsMap = {
   baseline: 'ui-items-baseline',
 };
 
-const Stack = ({
+export const Stack = ({
   direction = 'row',
   justifyContent = 'flex-start',
   alignItems = 'flex-start',
@@ -82,5 +82,3 @@ Stack.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
-
-export default Stack;

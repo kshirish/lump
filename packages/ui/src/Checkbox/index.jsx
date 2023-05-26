@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { Stack, Text } from '../';
 
-const Checkbox = ({
+export const Checkbox = ({
   label,
   name,
   value,
@@ -50,5 +50,3 @@ Checkbox.propTypes = {
   error: PropTypes.string,
   onChange: PropTypes.func,
 };
-
-export default Checkbox;

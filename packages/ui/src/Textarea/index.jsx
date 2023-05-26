@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { Text } from '../';
 
-const Textarea = ({
+export const Textarea = ({
   label,
   name,
   value,
@@ -61,5 +61,3 @@ Textarea.propTypes = {
   error: PropTypes.string,
   onChange: PropTypes.func,
 };
-
-export default Textarea;

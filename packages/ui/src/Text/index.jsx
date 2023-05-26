@@ -23,7 +23,12 @@ const variantMap = {
   body2: 'ui-text-xs ui-font-medium',
 };
 
-const Text = ({ variant = 'base', color = 'dark', children, className }) => {
+export const Text = ({
+  variant = 'base',
+  color = 'dark',
+  children,
+  className,
+}) => {
   const variantClass = variantMap[variant];
   const colorClass = colorMap[color];
 
@@ -60,5 +65,3 @@ Text.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
-
-export default Text;

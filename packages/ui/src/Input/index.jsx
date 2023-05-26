@@ -10,7 +10,7 @@ const sizeMap = {
   lg: 'ui-p-3 ui-text-base',
 };
 
-const Input = ({
+export const Input = ({
   label,
   name,
   type = 'text',
@@ -75,5 +75,3 @@ Input.propTypes = {
   error: PropTypes.string,
   onChange: PropTypes.func,
 };
-
-export default Input;

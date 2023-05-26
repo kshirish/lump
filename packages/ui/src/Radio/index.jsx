@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { Stack, RadioContext } from '../';
 
-const Radio = ({ label, value, disabled = false, className }) => {
+export const Radio = ({ label, value, disabled = false, className }) => {
   const context = useContext(RadioContext);
 
   if (!context) {
@@ -39,5 +39,3 @@ Radio.propTypes = {
   value: PropTypes.any,
   disabled: PropTypes.bool,
 };
-
-export default Radio;

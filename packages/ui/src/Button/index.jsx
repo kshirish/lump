@@ -20,7 +20,7 @@ const sizeMap = {
   lg: 'ui-px-4 ui-py-2 ui-text-base',
 };
 
-const Button = ({
+export const Button = ({
   variant = 'filled',
   color = 'primary',
   size = 'md',
@@ -60,5 +60,3 @@ Button.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
-
-export default Button;
