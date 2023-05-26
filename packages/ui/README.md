@@ -6,10 +6,10 @@
 4. ~~Paper~~
 5. ~~Loader~~
 6. ~~Input~~
-7. TextArea
+7. ~~TextArea~~
 8. Dropdown
-9. Checkbox
-10. Radiobox
+9. ~~Checkbox~~
+10. ~~Radiobox~~
 11. Grid
 12. Modal
 13. Sidebar

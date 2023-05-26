@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const colorMap = {
-  dark: 'ui-text-dark',
-  light: 'ui-text-light',
+  dark: 'ui-text-body',
+  light: 'ui-text-light1',
   white: 'ui-text-white',
   success: 'ui-text-success',
   danger: 'ui-text-danger',
@@ -18,7 +18,7 @@ const variantMap = {
   heading3: 'ui-text-2xl',
   heading4: 'ui-text-xl',
   heading5: 'ui-text-lg',
-  base: 'ui-text-base',
+  base: 'ui-text-body',
   body1: 'ui-text-sm',
   body2: 'ui-text-xs ui-font-medium',
 };
