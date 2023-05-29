@@ -5,6 +5,12 @@ export default {
   component: Text,
 };
 
+export const Basic = () => (
+  <Text as="span">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  </Text>
+);
+
 export const Variants = () => (
   <Stack direction="col" spacing={2}>
     <Text variant="heading1">

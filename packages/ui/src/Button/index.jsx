@@ -52,7 +52,6 @@ export const Button = ({
 };
 
 Button.propTypes = {
-  as: PropTypes.string,
   variant: PropTypes.oneOf(['filled', 'outlined', 'text']),
   color: PropTypes.oneOf(['primary', 'secondary']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),

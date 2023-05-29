@@ -24,6 +24,7 @@ const variantMap = {
 };
 
 export const Text = ({
+  as = 'div',
   variant = 'base',
   color = 'dark',
   children,
@@ -33,13 +34,15 @@ export const Text = ({
   const variantClass = variantMap[variant];
   const colorClass = colorMap[color];
 
+  const Tagname = as;
+
   return (
-    <div
+    <Tagname
       className={classNames(variantClass, colorClass, className)}
       {...restProps}
     >
       {children}
-    </div>
+    </Tagname>
   );
 };
 
