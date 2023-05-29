@@ -34,6 +34,7 @@ export const Stack = ({
   wrap,
   children,
   className,
+  ...restProps
 }) => {
   const directionClass = directionMap[direction];
   const justifyContentClass = justifyContentMap[justifyContent];
@@ -52,6 +53,7 @@ export const Stack = ({
         className,
       )}
       style={{ gap: 8 * spacing }}
+      {...restProps}
     >
       {children}
     </div>
@@ -82,3 +84,5 @@ Stack.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+Stack.displayName = 'Stack';

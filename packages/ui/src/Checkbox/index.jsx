@@ -12,6 +12,7 @@ export const Checkbox = ({
   error,
   className,
   onChange = () => {},
+  ...restProps
 }) => {
   return (
     <div>
@@ -26,6 +27,7 @@ export const Checkbox = ({
             className,
           )}
           onChange={onChange}
+          {...restProps}
         />
         {label && (
           <label className="ui-mb-2 ui-text-sm ui-font-medium ui-text-light1">
@@ -50,3 +52,5 @@ Checkbox.propTypes = {
   error: PropTypes.string,
   onChange: PropTypes.func,
 };
+
+Checkbox.displayName = 'Checkbox';

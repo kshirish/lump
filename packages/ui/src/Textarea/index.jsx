@@ -14,6 +14,7 @@ export const Textarea = ({
   error,
   className,
   onChange = () => {},
+  ...restProps
 }) => {
   return (
     <div>
@@ -36,6 +37,7 @@ export const Textarea = ({
           className,
         )}
         onChange={onChange}
+        {...restProps}
       />
       {helperText && (
         <Text variant="body2" color="light" className="ui-mb-1">
@@ -61,3 +63,5 @@ Textarea.propTypes = {
   error: PropTypes.string,
   onChange: PropTypes.func,
 };
+
+Textarea.displayName = 'Textarea';

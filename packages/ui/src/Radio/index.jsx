@@ -4,7 +4,13 @@ import classNames from 'classnames';
 
 import { Stack, RadioContext } from '../';
 
-export const Radio = ({ label, value, disabled = false, className }) => {
+export const Radio = ({
+  label,
+  value,
+  disabled = false,
+  className,
+  ...restProps
+}) => {
   const context = useContext(RadioContext);
 
   if (!context) {
@@ -24,6 +30,7 @@ export const Radio = ({ label, value, disabled = false, className }) => {
           className,
         )}
         onChange={context.onChange}
+        {...restProps}
       />
       {label && (
         <label className="ui-mb-2 ui-text-sm ui-font-medium ui-text-light1">
@@ -39,3 +46,5 @@ Radio.propTypes = {
   value: PropTypes.any,
   disabled: PropTypes.bool,
 };
+
+Radio.displayName = 'Radio';

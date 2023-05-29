@@ -12,7 +12,7 @@ const elevationMap = [
   'ui-shadow-2xl',
 ];
 
-export const Paper = ({ elevation, children, className }) => {
+export const Paper = ({ elevation, children, className, ...restProps }) => {
   const elevationClass = elevationMap[elevation ? elevation - 1 : 0];
 
   return (
@@ -22,6 +22,7 @@ export const Paper = ({ elevation, children, className }) => {
         elevationClass,
         className,
       )}
+      {...restProps}
     >
       {children}
     </div>
@@ -35,3 +36,5 @@ Paper.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+Paper.displayName = 'Paper';

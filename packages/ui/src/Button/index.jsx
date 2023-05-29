@@ -15,9 +15,9 @@ const variantMap = {
 };
 
 const sizeMap = {
-  sm: 'ui-px-2 ui-py-0.5 ui-text-xs',
-  md: 'ui-px-3 ui-py-1 ui-text-sm',
-  lg: 'ui-px-4 ui-py-2 ui-text-base',
+  sm: 'ui-px-2 ui-py-1 ui-text-xs',
+  md: 'ui-px-3 ui-py-2 ui-text-sm',
+  lg: 'ui-px-4 ui-py-3 ui-text-base',
 };
 
 export const Button = ({
@@ -27,6 +27,7 @@ export const Button = ({
   children,
   disabled = false,
   className,
+  ...restProps
 }) => {
   const variantClass = variantMap[variant][color];
   const sizeClass = sizeMap[size];
@@ -43,6 +44,7 @@ export const Button = ({
         },
         className,
       )}
+      {...restProps}
     >
       {children}
     </button>
@@ -60,3 +62,5 @@ Button.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+Button.displayName = 'Button';

@@ -15,7 +15,7 @@
 13. Sidebar
 14. List
 15. ListItem/MenuItem
-16. Popover
+16. ~~Popup~~
 17. Tab
 18. Toast
 

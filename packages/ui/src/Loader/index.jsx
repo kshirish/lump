@@ -8,7 +8,7 @@ const sizeMap = {
   lg: 'ui-h-12 ui-w-12',
 };
 
-export const Loader = ({ size = 'md', className }) => {
+export const Loader = ({ size = 'md', className, ...restProps }) => {
   const sizeClass = sizeMap[size];
 
   return (
@@ -18,6 +18,7 @@ export const Loader = ({ size = 'md', className }) => {
         sizeClass,
         className,
       )}
+      {...restProps}
     />
   );
 };
@@ -25,3 +26,5 @@ export const Loader = ({ size = 'md', className }) => {
 Loader.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
+
+Loader.displayName = 'Loader';

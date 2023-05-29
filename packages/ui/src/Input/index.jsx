@@ -22,6 +22,7 @@ export const Input = ({
   error,
   className,
   onChange = () => {},
+  ...restProps
 }) => {
   const sizeClass = sizeMap[size];
 
@@ -48,6 +49,7 @@ export const Input = ({
           className,
         )}
         onChange={onChange}
+        {...restProps}
       />
       {helperText && (
         <Text variant="body2" color="light" className="ui-mb-1">
@@ -75,3 +77,5 @@ Input.propTypes = {
   error: PropTypes.string,
   onChange: PropTypes.func,
 };
+
+Input.displayName = 'Input';

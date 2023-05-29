@@ -1,5 +1,5 @@
-import '../src/tailwind.css';
-import '@lump/ui/index.css';
+import '../src/styles/tailwind.css';
+import '@lump/ui/tailwind.css';
 
 const preview = {
   parameters: {

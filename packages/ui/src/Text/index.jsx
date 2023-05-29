@@ -28,12 +28,16 @@ export const Text = ({
   color = 'dark',
   children,
   className,
+  ...restProps
 }) => {
   const variantClass = variantMap[variant];
   const colorClass = colorMap[color];
 
   return (
-    <div className={classNames(variantClass, colorClass, className)}>
+    <div
+      className={classNames(variantClass, colorClass, className)}
+      {...restProps}
+    >
       {children}
     </div>
   );
@@ -65,3 +69,5 @@ Text.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+Text.displayName = 'Text';

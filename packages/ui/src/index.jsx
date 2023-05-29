@@ -1,10 +1,11 @@
-import './index.css';
+import './tailwind.css';
 
 export * from './Button';
 export * from './Checkbox';
 export * from './Input';
 export * from './Loader';
 export * from './Paper';
+export * from './Popup';
 export * from './Radio';
 export * from './RadioGroup';
 export * from './Stack';

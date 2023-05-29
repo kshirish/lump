@@ -4,7 +4,7 @@
   "main": "./src/index.jsx",
   "exports": {
     ".": "./dist/ui.mjs",
-    "./index.css": "./dist/style.css"
+    "./tailwind.css": "./dist/style.css"
   },
   "sideEffects": [
     "**/*.css"
