@@ -87,9 +87,6 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(postcss@8.4.20)
     devDependencies:
-      '@lump/eslint-config-custom':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config-custom
       '@lump/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
