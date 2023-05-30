@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stack, Button } from '@lump/ui';
 
 export default {
@@ -27,19 +28,19 @@ export const Sizes = () => (
     <Button>Read More</Button>
     <Button size="lg">Read More</Button>
 
-    <Button variant="outlined" size="sm">
+    <Button size="sm" variant="outlined">
       Read More
     </Button>
     <Button variant="outlined">Read More</Button>
-    <Button variant="outlined" size="lg">
+    <Button size="lg" variant="outlined">
       Read More
     </Button>
 
-    <Button variant="text" size="sm">
+    <Button size="sm" variant="text">
       Read More
     </Button>
     <Button variant="text">Read More</Button>
-    <Button variant="text" size="lg">
+    <Button size="lg" variant="text">
       Read More
     </Button>
   </Stack>

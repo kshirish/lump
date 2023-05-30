@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Stack, Radio, RadioGroup } from '@lump/ui';
 
 export default {
@@ -8,25 +8,25 @@ export default {
 
 export const Horizontal = () => (
   <RadioGroup name="favorite" inline>
-    <Radio value="Yellow" label="Yellow" />
-    <Radio value="Blue" label="Blue" />
-    <Radio value="Maroon" label="Maroon" />
+    <Radio label="Yellow" value="Yellow" />
+    <Radio label="Blue" value="Blue" />
+    <Radio label="Maroon" value="Maroon" />
   </RadioGroup>
 );
 
 export const Vertical = () => (
   <RadioGroup name="favorite">
-    <Radio value="Yellow" label="Yellow" />
-    <Radio value="Blue" label="Blue" />
-    <Radio value="Maroon" label="Maroon" />
+    <Radio label="Yellow" value="Yellow" />
+    <Radio label="Blue" value="Blue" />
+    <Radio label="Maroon" value="Maroon" />
   </RadioGroup>
 );
 
 export const Disabled = () => (
   <RadioGroup name="favorite">
-    <Radio value="Yellow" label="Yellow" />
-    <Radio value="Blue" label="Blue" disabled />
-    <Radio value="Maroon" label="Maroon" />
+    <Radio label="Yellow" value="Yellow" />
+    <Radio label="Blue" value="Blue" disabled />
+    <Radio label="Maroon" value="Maroon" />
   </RadioGroup>
 );
 
@@ -48,14 +48,14 @@ export const Controlled = () => {
 
   return (
     <RadioGroup
+      error={error}
       name="favorite"
       value={favorite}
-      error={error}
       onChange={handleChange}
     >
-      <Radio value="Yellow" label="Yellow" />
-      <Radio value="Blue" label="Blue" />
-      <Radio value="Maroon" label="Maroon" />
+      <Radio label="Yellow" value="Yellow" />
+      <Radio label="Blue" value="Blue" />
+      <Radio label="Maroon" value="Maroon" />
     </RadioGroup>
   );
 };

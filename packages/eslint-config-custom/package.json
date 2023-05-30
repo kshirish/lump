@@ -1,16 +1,16 @@
 {
   "name": "@lump/eslint-config-custom",
   "version": "0.0.0",
-  "main": "index.cjs",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf node_modules && rm -rf dist"
   },
-  "dependencies": {
+  "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
+    "eslint-config-turbo": "latest",
     "eslint-plugin-react": "7.29.4",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-config-turbo": "latest"
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "publishConfig": {
     "access": "public"

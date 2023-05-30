@@ -1,13 +1,5 @@
 import './tailwind.css';
 
-export * from './Button';
-export * from './Checkbox';
-export * from './Input';
-export * from './Loader';
-export * from './Paper';
-export * from './Popup';
-export * from './Radio';
-export * from './RadioGroup';
-export * from './Stack';
-export * from './Text';
-export * from './Textarea';
+export * from './components';
+export * from './hooks';
+export * from './providers';

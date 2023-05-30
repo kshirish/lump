@@ -1,3 +1,4 @@
+import React from 'react';
 import { Popup, Button, Text } from '@lump/ui';
 
 export default {
@@ -14,17 +15,15 @@ export const Example1 = () => (
 );
 
 export const Example2 = () => (
-  <div className="text-center">
-    <Text>Lorem ipsum dolor</Text>
-    <Text>sit amet consectetur adipisicing elit.</Text>
+  <div>
     <Text>
-      Eveniet qui, quaerat commodi hic sunt ipsa neque quam nostrum incidunt
-      officiis eligendi asperiores saepe, error ullam sint nulla laborum natus
-      et!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ex tempora
+      iure nostrum nesciunt fugit mollitia repellendus sunt totam consequuntur?
+      Natus eveniet debitis neque, corporis quae quam illo facilis? Vel?
     </Text>
     <Popup
       trigger={
-        <div className="w-32 h-32 bg-info flex flex-col justify-center items-center">
+        <div className="mt-6 p-6 border border-light2 rounded flex flex-col justify-center items-center">
           <Button>More Info</Button>
         </div>
       }

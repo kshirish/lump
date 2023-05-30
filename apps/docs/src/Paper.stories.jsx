@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stack, Paper } from '@lump/ui';
 
 export default {

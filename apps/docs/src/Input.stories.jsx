@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Input } from '@lump/ui';
 
 export default {
@@ -8,16 +8,16 @@ export default {
 
 export const Basic = () => (
   <Input
-    name="firstName"
     label="First Name"
+    name="firstName"
     placeholder="Enter your first name"
   />
 );
 
 export const Disabled = () => (
   <Input
-    name="firstName"
     label="First Name"
+    name="firstName"
     placeholder="Enter your first name"
     disabled
   />
@@ -26,40 +26,40 @@ export const Disabled = () => (
 export const Sizes = () => (
   <>
     <Input
+      label="First Name"
       name="firstName"
+      placeholder="Enter your first name"
       size="sm"
+    />
+    <Input
       label="First Name"
+      name="firstName"
       placeholder="Enter your first name"
     />
     <Input
-      name="firstName"
       label="First Name"
-      placeholder="Enter your first name"
-    />
-    <Input
       name="firstName"
+      placeholder="Enter your first name"
       size="lg"
-      label="First Name"
-      placeholder="Enter your first name"
     />
   </>
 );
 
 export const Error = () => (
   <Input
-    name="firstName"
-    label="First Name"
-    placeholder="Enter your first name"
     error="First name should have more than 3 letters"
+    label="First Name"
+    name="firstName"
+    placeholder="Enter your first name"
   />
 );
 
 export const Helper = () => (
   <Input
-    name="firstName"
-    label="First Name"
-    placeholder="Enter your first name"
     helperText="You can skip it"
+    label="First Name"
+    name="firstName"
+    placeholder="Enter your first name"
   />
 );
 
@@ -81,12 +81,12 @@ export const Controlled = () => {
 
   return (
     <Input
-      type="number"
-      name="age"
-      label="Age"
-      helperText="Try entering less than 18"
-      value={age}
       error={error}
+      helperText="Try entering less than 18"
+      label="Age"
+      name="age"
+      type="number"
+      value={age}
       onChange={handleChange}
     />
   );

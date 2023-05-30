@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stack, Loader } from '@lump/ui';
 
 export default {

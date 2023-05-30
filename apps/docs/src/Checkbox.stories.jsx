@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Checkbox } from '@lump/ui';
 
 export default {
@@ -6,17 +6,17 @@ export default {
   component: Checkbox,
 };
 
-export const Basic = () => <Checkbox name="offer" label="Free Shopping" />;
+export const Basic = () => <Checkbox label="Free Shopping" name="offer" />;
 
 export const Disabled = () => (
-  <Checkbox name="offer" label="Free Shopping" disabled />
+  <Checkbox label="Free Shopping" name="offer" disabled />
 );
 
 export const Error = () => (
   <Checkbox
-    name="offer"
-    label="Free Shopping"
     error="Only logged-in users can avail"
+    label="Free Shopping"
+    name="offer"
   />
 );
 
@@ -38,10 +38,10 @@ export const Controlled = () => {
 
   return (
     <Checkbox
-      name="agreed"
-      label="I agree with above Terms and Conditions"
-      value={agreed}
       error={error}
+      label="I agree with above Terms and Conditions"
+      name="agreed"
+      value={agreed}
       onChange={handleChange}
     />
   );

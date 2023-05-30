@@ -4,9 +4,11 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
+    "lint": "eslint --fix \"src/**/*.js*\"",
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@lump/ui": "workspace:*",
     "@lump/utils": "workspace:*",
     "react": "^18.2.0",

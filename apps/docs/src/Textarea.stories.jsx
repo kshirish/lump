@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Textarea } from '@lump/ui';
 
 export default {
@@ -8,16 +8,16 @@ export default {
 
 export const Basic = () => (
   <Textarea
-    name="firstName"
     label="First Name"
+    name="firstName"
     placeholder="Enter your first name"
   />
 );
 
 export const Disabled = () => (
   <Textarea
-    name="firstName"
     label="First Name"
+    name="firstName"
     placeholder="Enter your first name"
     disabled
   />
@@ -25,19 +25,19 @@ export const Disabled = () => (
 
 export const Error = () => (
   <Textarea
-    name="firstName"
-    label="First Name"
-    placeholder="Enter your first name"
     error="First name should have more than 3 letters"
+    label="First Name"
+    name="firstName"
+    placeholder="Enter your first name"
   />
 );
 
 export const Helper = () => (
   <Textarea
-    name="firstName"
-    label="First Name"
-    placeholder="Enter your first name"
     helperText="You can skip it"
+    label="First Name"
+    name="firstName"
+    placeholder="Enter your first name"
   />
 );
 
@@ -59,11 +59,11 @@ export const Controlled = () => {
 
   return (
     <Textarea
-      name="name"
-      label="Name"
-      helperText="Try typing lesser than 5 characters"
-      value={name}
       error={error}
+      helperText="Try typing lesser than 5 characters"
+      label="Name"
+      name="name"
+      value={name}
       onChange={handleChange}
     />
   );

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stack, Paper } from '@lump/ui';
 
 export default {
@@ -47,7 +48,7 @@ export const Example2 = () => (
 );
 
 export const Example3 = () => (
-  <Stack direction="col" alignItems="center" spacing={2}>
+  <Stack alignItems="center" direction="col" spacing={2}>
     <Item1 />
     <Item2 />
     <Item3 />

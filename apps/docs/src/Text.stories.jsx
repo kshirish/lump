@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stack, Text } from '@lump/ui';
 
 export default {
@@ -44,31 +45,31 @@ export const Variants = () => (
 
 export const Colors = () => (
   <Stack direction="col" spacing={2}>
-    <Text variant="base" color="light">
+    <Text color="light" variant="base">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body1" color="success">
+    <Text color="success" variant="body1">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body1" color="danger">
+    <Text color="danger" variant="body1">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body1" color="warning">
+    <Text color="warning" variant="body1">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body1" color="info">
+    <Text color="info" variant="body1">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body2" color="success">
+    <Text color="success" variant="body2">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body2" color="danger">
+    <Text color="danger" variant="body2">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body2" color="warning">
+    <Text color="warning" variant="body2">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
-    <Text variant="body2" color="info">
+    <Text color="info" variant="body2">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
     </Text>
   </Stack>
