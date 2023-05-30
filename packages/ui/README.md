@@ -9,31 +9,34 @@
 5. ~~Loader~~
 6. ~~Input~~
 7. ~~TextArea~~
-8. Dropdown, InputDropdown
+8. Select
 9. ~~Checkbox~~
 10. ~~Radiobox~~
 11. ~~List, ListSubheader, ListItem, ListItemButton, ListItemIcon, ListItemText~~
 12. ~~Popup~~
-13. Grid
-14. Modal
-15. Tab
-16. Toast
-17. ButtonGroup
-18. Slider
-19. FormBuilder
-20. Divider
-21. Progress
-22. Drawer
-23. Stepper
-24. Table, WithActions
-25. Layouts
+13. Menu (PopupList): KebabMenu, LinkMenu, ButtonMenu
+14. AutoComplete
+15. Grid
+16. Modal
+17. Tab
+18. Accordion
+19. ~~ButtonGroup~~
+20. Slider
+21. FormBuilder
+22. Timeline
+23. FileUpload
+24. ~~Divider~~
+25. Progress
+26. Drawer
+27. Stepper
+28. Layouts
+29. Shell
 
 ### hooks
 
 1. useMediaQuery
 2. useClickOutside
 3. useInterval
-4. useTheme
 
 ### providers
 

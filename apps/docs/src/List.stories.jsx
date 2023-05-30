@@ -7,6 +7,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Divider,
 } from '@lump/ui';
 
 export default {
@@ -17,6 +18,7 @@ export default {
 export const Example1 = () => (
   <List>
     <ListSubHeader>Important Sections</ListSubHeader>
+    <Divider />
     <ListItem>
       <ListItemText>Inbox</ListItemText>
     </ListItem>
@@ -24,6 +26,7 @@ export const Example1 = () => (
       <ListItemText>Draft</ListItemText>
     </ListItem>
     <ListSubHeader>More Sections</ListSubHeader>
+    <Divider />
     <ListItem>
       <ListItemText>Trash</ListItemText>
     </ListItem>
@@ -87,6 +90,7 @@ export const Example4 = () => (
       </ListItemIcon>
       <ListItemText primary="Draft" secondary="Jan 7, 2014" />
     </ListItemButton>
+    <Divider />
     <ListItemButton>
       <ListItemText primary="Trash" secondary="Jan 7, 2014" />
     </ListItemButton>
