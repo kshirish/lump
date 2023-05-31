@@ -9,6 +9,7 @@ export * from './Paper';
 export * from './Popup';
 export * from './Radio';
 export * from './RadioGroup';
+export * from './Select';
 export * from './Stack';
 export * from './Text';
 export * from './Textarea';

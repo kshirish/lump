@@ -9,7 +9,7 @@
 5. ~~Loader~~
 6. ~~Input~~
 7. ~~TextArea~~
-8. Select
+8. ~~Select~~
 9. ~~Checkbox~~
 10. ~~Radiobox~~
 11. ~~List, ListSubheader, ListItem, ListItemButton, ListItemIcon, ListItemText~~
