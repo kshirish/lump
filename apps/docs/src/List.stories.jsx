@@ -22,7 +22,7 @@ export const Example1 = () => (
     <ListItem>
       <ListItemText>Inbox</ListItemText>
     </ListItem>
-    <ListItem>
+    <ListItem selected>
       <ListItemText>Draft</ListItemText>
     </ListItem>
     <ListSubHeader>More Sections</ListSubHeader>
@@ -44,7 +44,7 @@ export const Example2 = () => (
     <ListItemButton>
       <ListItemText>Draft</ListItemText>
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton selected>
       <ListItemText>Trash</ListItemText>
     </ListItemButton>
     <ListItemButton>

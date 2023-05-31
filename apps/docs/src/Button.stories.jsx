@@ -7,7 +7,7 @@ export default {
 };
 
 export const Variants = () => (
-  <Stack direction="col" spacing={2}>
+  <Stack spacing={2}>
     <Button>Primary Button</Button>
     <Button variant="outlined">Primary Button</Button>
     <Button variant="text">Primary Button</Button>
@@ -23,24 +23,28 @@ export const Variants = () => (
 );
 
 export const Sizes = () => (
-  <Stack direction="col" spacing={2}>
+  <Stack spacing={2}>
     <Button size="sm">Read More</Button>
     <Button>Read More</Button>
     <Button size="lg">Read More</Button>
 
-    <Button size="sm" variant="outlined">
+    <Button color="secondary" size="sm" variant="outlined">
       Read More
     </Button>
-    <Button variant="outlined">Read More</Button>
-    <Button size="lg" variant="outlined">
+    <Button color="secondary" variant="outlined">
+      Read More
+    </Button>
+    <Button color="secondary" size="lg" variant="outlined">
       Read More
     </Button>
 
-    <Button size="sm" variant="text">
+    <Button color="secondary" size="sm" variant="text">
       Read More
     </Button>
-    <Button variant="text">Read More</Button>
-    <Button size="lg" variant="text">
+    <Button color="secondary" variant="text">
+      Read More
+    </Button>
+    <Button color="secondary" size="lg" variant="text">
       Read More
     </Button>
   </Stack>

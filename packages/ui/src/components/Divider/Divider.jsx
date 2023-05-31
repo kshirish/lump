@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const Divider = ({ className = '', ...restProps }) => {
   return (
-    <hr className={classNames('ui-border-light2', className)} {...restProps} />
+    <hr className={classNames('ui-border-light3', className)} {...restProps} />
   );
 };
 

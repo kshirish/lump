@@ -20,7 +20,7 @@ const Checkbox = ({
         <input
           checked={value}
           className={classNames(
-            'ui-w-4 ui-h-4 ui-text-info ui-bg-light3 ui-border-light2 ui-rounded ui-focus:ring-info ui-focus:ring-2',
+            'ui-w-4 ui-h-4 ui-border-light2 ui-rounded ui-focus:ring-info ui-focus:ring-2',
             className,
           )}
           disabled={disabled}

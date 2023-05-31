@@ -6,7 +6,9 @@ export default {
   component: Checkbox,
 };
 
-export const Basic = () => <Checkbox label="Free Shopping" name="offer" />;
+export const Basic = () => (
+  <Checkbox label="Free Shopping" name="offer" checked />
+);
 
 export const Disabled = () => (
   <Checkbox label="Free Shopping" name="offer" disabled />
