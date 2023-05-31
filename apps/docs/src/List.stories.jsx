@@ -57,13 +57,13 @@ export const Example3 = () => (
   <List>
     <ListItem>
       <ListItemIcon>
-        <InboxIcon className="h-6 w-6" />
+        <InboxIcon className="h-4 w-4" />
       </ListItemIcon>
       <ListItemText>Inbox</ListItemText>
     </ListItem>
     <ListItem>
       <ListItemIcon>
-        <ArchiveBoxIcon className="h-6 w-6" />
+        <ArchiveBoxIcon className="h-4 w-4" />
       </ListItemIcon>
       <ListItemText>Draft</ListItemText>
     </ListItem>
@@ -80,13 +80,13 @@ export const Example4 = () => (
   <List>
     <ListItemButton>
       <ListItemIcon>
-        <InboxIcon className="h-6 w-6" />
+        <InboxIcon className="h-4 w-4" />
       </ListItemIcon>
       <ListItemText primary="Inbox" secondary="Jan 7, 2014" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <ArchiveBoxIcon className="h-6 w-6" />
+        <ArchiveBoxIcon className="h-4 w-4" />
       </ListItemIcon>
       <ListItemText primary="Draft" secondary="Jan 7, 2014" />
     </ListItemButton>

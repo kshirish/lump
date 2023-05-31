@@ -1,4 +1,5 @@
 import React from 'react';
+import { InboxIcon, ArchiveBoxIcon } from '@heroicons/react/24/outline';
 import { Stack, Button } from '@lump/ui';
 
 export default {
@@ -46,6 +47,38 @@ export const Sizes = () => (
     </Button>
     <Button color="secondary" size="lg" variant="text">
       Read More
+    </Button>
+  </Stack>
+);
+
+export const Icons = () => (
+  <Stack spacing={2}>
+    <Button startIcon={<InboxIcon className="h-4 w-4" />}>
+      Primary Button
+    </Button>
+    <Button startIcon={<InboxIcon className="h-4 w-4" />} variant="outlined">
+      Primary Button
+    </Button>
+    <Button startIcon={<InboxIcon className="h-4 w-4" />} variant="text">
+      Primary Button
+    </Button>
+
+    <Button endIcon={<ArchiveBoxIcon className="h-4 w-4" />} color="secondary">
+      Secondary Button
+    </Button>
+    <Button
+      endIcon={<ArchiveBoxIcon className="h-4 w-4" />}
+      color="secondary"
+      variant="outlined"
+    >
+      Secondary Button
+    </Button>
+    <Button
+      endIcon={<ArchiveBoxIcon className="h-4 w-4" />}
+      color="secondary"
+      variant="text"
+    >
+      Secondary Button
     </Button>
   </Stack>
 );

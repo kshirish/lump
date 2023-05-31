@@ -19,15 +19,15 @@ module.exports = {
     //     noSortAlphabetically: false,
     //   },
     // ],
-    'react/jsx-sort-props': [
-      2,
-      {
-        callbacksLast: true,
-        shorthandFirst: false,
-        shorthandLast: true,
-        noSortAlphabetically: false,
-        reservedFirst: true,
-      },
-    ],
+    // 'react/jsx-sort-props': [
+    //   2,
+    //   {
+    //     callbacksLast: true,
+    //     shorthandFirst: false,
+    //     shorthandLast: true,
+    //     noSortAlphabetically: false,
+    //     reservedFirst: true,
+    //   },
+    // ],
   },
 };

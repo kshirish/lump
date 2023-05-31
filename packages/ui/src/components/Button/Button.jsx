@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { Stack } from '../';
+
 const variantMap = {
   filled: {
     primary: 'ui-text-white ui-bg-primary',
@@ -26,6 +28,8 @@ const Button = ({
   size = 'md',
   children,
   disabled = false,
+  startIcon,
+  endIcon,
   className = '',
   ...restProps
 }) => {
@@ -33,9 +37,12 @@ const Button = ({
   const sizeClass = sizeMap[size];
 
   return (
-    <button
+    <Stack
+      as="button"
+      spacing={1}
+      alignItems="center"
       className={classNames(
-        'ui-rounded',
+        'ui-flex ui-rounded ui-font-medium',
         variantClass,
         sizeClass,
         {
@@ -46,8 +53,10 @@ const Button = ({
       type="button"
       {...restProps}
     >
+      {startIcon}
       {children}
-    </button>
+      {endIcon}
+    </Stack>
   );
 };
 
@@ -56,6 +65,8 @@ Button.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   disabled: PropTypes.bool,
+  startIcon: PropTypes.node,
+  endIcon: PropTypes.node,
   className: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

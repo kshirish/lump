@@ -13,7 +13,7 @@ const preview = {
         },
         {
           name: 'light',
-          value: '#EEEEEE',
+          value: '#F2F2F2',
         },
       ],
     },

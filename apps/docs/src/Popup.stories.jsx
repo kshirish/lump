@@ -1,12 +1,28 @@
-import React from 'react';
-import { Popup, Button, Text } from '@lump/ui';
+import React, { useState } from 'react';
+import {
+  InboxIcon,
+  ArchiveBoxIcon,
+  EllipsisVerticalIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
+} from '@heroicons/react/24/outline';
+import {
+  Popup,
+  Button,
+  Text,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from '@lump/ui';
 
 export default {
   title: 'Example/Popup',
   component: Popup,
 };
 
-export const Example1 = () => (
+export const Basic = () => (
   <Popup trigger={<Button>More Info</Button>}>
     <Text variant="body1">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -14,23 +30,119 @@ export const Example1 = () => (
   </Popup>
 );
 
-export const Example2 = () => (
-  <div>
-    <Text>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ex tempora
-      iure nostrum nesciunt fugit mollitia repellendus sunt totam consequuntur?
-      Natus eveniet debitis neque, corporis quae quam illo facilis? Vel?
-    </Text>
+export const KebabMenu = () => (
+  <Popup trigger={<EllipsisVerticalIcon className="h-4 w-4 cursor-pointer" />}>
+    <List>
+      <ListItemButton>
+        <ListItemIcon>
+          <InboxIcon className="h-4 w-4" />
+        </ListItemIcon>
+        <ListItemText primary="Inbox" secondary="Jan 7, 2014" />
+      </ListItemButton>
+      <ListItemButton>
+        <ListItemIcon>
+          <ArchiveBoxIcon className="h-4 w-4" />
+        </ListItemIcon>
+        <ListItemText primary="Draft" secondary="Jan 7, 2014" />
+      </ListItemButton>
+      <ListItemButton>
+        <ListItemText primary="Trash" secondary="Jan 7, 2014" />
+      </ListItemButton>
+      <ListItemButton>
+        <ListItemText primary="Spam" secondary="Jan 7, 2014" />
+      </ListItemButton>
+    </List>
+  </Popup>
+);
+
+export const LinkMenu = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
     <Popup
       trigger={
-        <div className="mt-6 p-6 border border-light2 rounded flex flex-col justify-center items-center">
-          <Button>More Info</Button>
-        </div>
+        <Button
+          startIcon={
+            open ? (
+              <ChevronUpIcon className="h-4 w-4" />
+            ) : (
+              <ChevronDownIcon className="h-4 w-4" />
+            )
+          }
+          variant="text"
+          color="secondary"
+        >
+          More Info
+        </Button>
       }
+      onOpen={() => setOpen(true)}
+      onClose={() => setOpen(false)}
     >
-      <Text variant="body1">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </Text>
+      <List>
+        <ListItemButton>
+          <ListItemIcon>
+            <InboxIcon className="h-4 w-4" />
+          </ListItemIcon>
+          <ListItemText primary="Inbox" secondary="Jan 7, 2014" />
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemIcon>
+            <ArchiveBoxIcon className="h-4 w-4" />
+          </ListItemIcon>
+          <ListItemText primary="Draft" secondary="Jan 7, 2014" />
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemText primary="Trash" secondary="Jan 7, 2014" />
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemText primary="Spam" secondary="Jan 7, 2014" />
+        </ListItemButton>
+      </List>
     </Popup>
-  </div>
-);
+  );
+};
+
+export const ButtonMenu = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Popup
+      trigger={
+        <Button
+          startIcon={
+            open ? (
+              <ChevronUpIcon className="h-4 w-4" />
+            ) : (
+              <ChevronDownIcon className="h-4 w-4" />
+            )
+          }
+        >
+          More Info
+        </Button>
+      }
+      onOpen={() => setOpen(true)}
+      onClose={() => setOpen(false)}
+    >
+      <List>
+        <ListItemButton>
+          <ListItemIcon>
+            <InboxIcon className="h-4 w-4" />
+          </ListItemIcon>
+          <ListItemText primary="Inbox" secondary="Jan 7, 2014" />
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemIcon>
+            <ArchiveBoxIcon className="h-4 w-4" />
+          </ListItemIcon>
+          <ListItemText primary="Draft" secondary="Jan 7, 2014" />
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemText primary="Trash" secondary="Jan 7, 2014" />
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemText primary="Spam" secondary="Jan 7, 2014" />
+        </ListItemButton>
+      </List>
+    </Popup>
+  );
+};

@@ -27,6 +27,7 @@ const alignItemsMap = {
 };
 
 const Stack = ({
+  as = 'div',
   direction = 'row',
   justifyContent = 'flex-start',
   alignItems = 'flex-start',
@@ -40,8 +41,10 @@ const Stack = ({
   const justifyContentClass = justifyContentMap[justifyContent];
   const alignItemsClass = alignItemsMap[alignItems];
 
+  const Tagname = as;
+
   return (
-    <div
+    <Tagname
       className={classNames(
         'ui-flex',
         directionClass,
@@ -56,11 +59,12 @@ const Stack = ({
       {...restProps}
     >
       {children}
-    </div>
+    </Tagname>
   );
 };
 
 Stack.propTypes = {
+  as: PropTypes.string,
   direction: PropTypes.oneOf(['row', 'row-reverse', 'col', 'col-reverse']),
   justifyContent: PropTypes.oneOf([
     'flex-start',
