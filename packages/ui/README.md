@@ -14,11 +14,11 @@
 10. ~~Radiobox~~
 11. ~~List, ListSubheader, ListItem, ListItemButton, ListItemIcon, ListItemText~~
 12. ~~Popup~~
-13. AutoComplete
+13. Autocomplete
 14. Grid
-15. Modal
-16. Tab
-17. Accordion
+15. Tab
+16. Accordion
+17. Modal
 18. ~~ButtonGroup~~
 19. Slider
 20. FormBuilder
