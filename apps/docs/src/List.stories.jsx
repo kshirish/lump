@@ -15,7 +15,7 @@ export default {
   component: List,
 };
 
-export const Example1 = () => (
+export const Basic = () => (
   <List>
     <ListSubHeader>Important Sections</ListSubHeader>
     <Divider />
@@ -36,24 +36,24 @@ export const Example1 = () => (
   </List>
 );
 
-export const Example2 = () => (
+export const ListItemButtonExample = () => (
   <List>
-    <ListItemButton>
+    <ListItemButton name="inbox">
       <ListItemText>Inbox</ListItemText>
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton name="draft" onClick={(e, name) => console.log(e, name)}>
       <ListItemText>Draft</ListItemText>
     </ListItemButton>
-    <ListItemButton selected>
+    <ListItemButton name="trash" selected>
       <ListItemText>Trash</ListItemText>
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton name="spam">
       <ListItemText>Spam</ListItemText>
     </ListItemButton>
   </List>
 );
 
-export const Example3 = () => (
+export const ListItemIconExample = () => (
   <List>
     <ListItem>
       <ListItemIcon>
@@ -76,7 +76,7 @@ export const Example3 = () => (
   </List>
 );
 
-export const Example4 = () => (
+export const ListItemTextExample = () => (
   <List>
     <ListItemButton>
       <ListItemIcon>
@@ -99,3 +99,22 @@ export const Example4 = () => (
     </ListItemButton>
   </List>
 );
+
+export const Controlled = () => {
+  return (
+    <List onItemClick={(e, name) => console.log(e, name)}>
+      <ListItemButton name="inbox">
+        <ListItemText>Inbox</ListItemText>
+      </ListItemButton>
+      <ListItemButton name="draft">
+        <ListItemText>Draft</ListItemText>
+      </ListItemButton>
+      <ListItemButton name="trash" selected>
+        <ListItemText>Trash</ListItemText>
+      </ListItemButton>
+      <ListItemButton name="spam">
+        <ListItemText>Spam</ListItemText>
+      </ListItemButton>
+    </List>
+  );
+};

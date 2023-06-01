@@ -31,7 +31,7 @@ const Item3 = () => (
   </Paper>
 );
 
-export const Example1 = () => (
+export const HorizontalExample = () => (
   <Stack spacing={2}>
     <Item1 />
     <Item2 />
@@ -39,7 +39,7 @@ export const Example1 = () => (
   </Stack>
 );
 
-export const Example2 = () => (
+export const VerticalExample = () => (
   <Stack direction="col" spacing={2}>
     <Item1 />
     <Item2 />
@@ -47,7 +47,7 @@ export const Example2 = () => (
   </Stack>
 );
 
-export const Example3 = () => (
+export const CenterExample = () => (
   <Stack alignItems="center" direction="col" spacing={2}>
     <Item1 />
     <Item2 />

@@ -1,9 +1,16 @@
-import React, { cloneElement, useEffect, useState } from 'react';
+import React, {
+  cloneElement,
+  useRef,
+  useEffect,
+  useState,
+  useCallback,
+} from 'react';
 import PropTypes from 'prop-types';
 
 import { Paper } from '../';
 
 const Popup = ({
+  as = Paper,
   trigger,
   children,
   className = '',
@@ -11,6 +18,8 @@ const Popup = ({
   onClose = () => {},
   ...restProps
 }) => {
+  const parentRef = useRef(null);
+
   const [show, setShow] = useState(false);
   const [styles, setStyles] = useState({
     top: 0,
@@ -21,29 +30,32 @@ const Popup = ({
     show ? onOpen() : onClose();
   }, [show]);
 
-  const handleTriggerClick = (e) => {
-    const triggerHeight = e.currentTarget.clientHeight;
+  const handleTriggerClick = useCallback((e) => {
+    const { top: parentTop } = parentRef.current.getBoundingClientRect();
+    const { top: currentTargetTop, height: clientHeight } =
+      e.currentTarget.getBoundingClientRect();
 
-    const top = triggerHeight + 8;
+    const top = currentTargetTop - parentTop + clientHeight + 8;
 
     setStyles((prev) => ({ ...prev, top }));
     setShow((prev) => !prev);
-  };
+  }, []);
+
+  const Tagname = as;
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div ref={parentRef} style={{ position: 'relative' }}>
       {cloneElement(trigger, {
         onClick: handleTriggerClick,
       })}
       {show && (
-        <Paper
+        <Tagname
           className={className}
-          elevation={3}
           style={{ position: 'absolute', width: 'max-content', ...styles }}
           {...restProps}
         >
           {children}
-        </Paper>
+        </Tagname>
       )}
     </div>
   );
@@ -52,6 +64,7 @@ const Popup = ({
 Popup.propTypes = {
   trigger: PropTypes.node,
   className: PropTypes.string,
+  as: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

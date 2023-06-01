@@ -11,7 +11,7 @@ const ListItem = ({
   return (
     <div
       className={classNames(
-        'ui-flex ui-px-4 ui-py-2 hover:ui-bg-light3',
+        'ui-listitem ui-flex ui-px-4 ui-py-2 hover:ui-bg-light3',
         { 'ui-bg-selected': selected },
         className,
       )}

@@ -8,10 +8,10 @@ import {
 } from '@heroicons/react/24/outline';
 import {
   Popup,
+  Input,
   Button,
   Text,
   List,
-  ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
@@ -106,43 +106,51 @@ export const ButtonMenu = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Popup
-      trigger={
-        <Button
-          startIcon={
-            open ? (
-              <ChevronUpIcon className="h-4 w-4" />
-            ) : (
-              <ChevronDownIcon className="h-4 w-4" />
-            )
-          }
-        >
-          More Info
-        </Button>
-      }
-      onOpen={() => setOpen(true)}
-      onClose={() => setOpen(false)}
-    >
-      <List>
-        <ListItemButton>
-          <ListItemIcon>
-            <InboxIcon className="h-4 w-4" />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" secondary="Jan 7, 2014" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemIcon>
-            <ArchiveBoxIcon className="h-4 w-4" />
-          </ListItemIcon>
-          <ListItemText primary="Draft" secondary="Jan 7, 2014" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemText primary="Trash" secondary="Jan 7, 2014" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemText primary="Spam" secondary="Jan 7, 2014" />
-        </ListItemButton>
-      </List>
-    </Popup>
+    <>
+      <Text className="mb-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione minus
+        tempora distinctio aspernatur delectus? Dolorum voluptatem tenetur amet
+        eligendi impedit. Recusandae accusamus vitae non odit. Ducimus non quam
+        cum sunt.
+      </Text>
+      <Popup
+        trigger={
+          <Button
+            startIcon={
+              open ? (
+                <ChevronUpIcon className="h-4 w-4" />
+              ) : (
+                <ChevronDownIcon className="h-4 w-4" />
+              )
+            }
+          >
+            More Info
+          </Button>
+        }
+        onOpen={() => setOpen(true)}
+        onClose={() => setOpen(false)}
+      >
+        <List>
+          <ListItemButton>
+            <ListItemIcon>
+              <InboxIcon className="h-4 w-4" />
+            </ListItemIcon>
+            <ListItemText primary="Inbox" secondary="Jan 7, 2014" />
+          </ListItemButton>
+          <ListItemButton>
+            <ListItemIcon>
+              <ArchiveBoxIcon className="h-4 w-4" />
+            </ListItemIcon>
+            <ListItemText primary="Draft" secondary="Jan 7, 2014" />
+          </ListItemButton>
+          <ListItemButton>
+            <ListItemText primary="Trash" secondary="Jan 7, 2014" />
+          </ListItemButton>
+          <ListItemButton>
+            <ListItemText primary="Spam" secondary="Jan 7, 2014" />
+          </ListItemButton>
+        </List>
+      </Popup>
+    </>
   );
 };

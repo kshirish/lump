@@ -13,7 +13,7 @@ const elevationMap = [
 ];
 
 const Paper = ({ elevation, children, className = '', ...restProps }) => {
-  const elevationClass = elevationMap[elevation ? elevation - 1 : 0];
+  const elevationClass = elevationMap[elevation ? elevation - 1 : 3];
 
   return (
     <div
