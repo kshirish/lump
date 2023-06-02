@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Accordion, AccordionItem } from '@lump/ui';
 
 export default {
@@ -7,13 +7,13 @@ export default {
 };
 
 export const Basic = () => {
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <Accordion
       activeIndex={activeIndex}
-      onChange={({ activeIndex }) => {
-        setActiveIndex(activeIndex);
+      onChange={(e, index) => {
+        setActiveIndex(index);
       }}
     >
       <AccordionItem title="Panel 1">Content 1</AccordionItem>

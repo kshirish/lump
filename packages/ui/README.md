@@ -16,8 +16,8 @@
 12. ~~Popup~~
 13. ~~Autocomplete~~
 14. ~~Grid~~
-15. Tab
-16. Accordion
+15. ~~Tab~~
+16. ~~Accordion~~
 17. Modal
 18. ~~ButtonGroup~~
 19. Slider

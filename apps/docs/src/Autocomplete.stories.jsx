@@ -69,7 +69,7 @@ export const Basic = () => (
   <Autocomplete
     options={topFilms}
     renderInput={(props) => {
-      console.log('props.selected', props.selected);
+      console.log(props.selected);
 
       return (
         <Input
