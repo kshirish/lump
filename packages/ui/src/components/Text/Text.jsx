@@ -47,7 +47,7 @@ const Text = ({
 };
 
 Text.propTypes = {
-  as: PropTypes.string,
+  as: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   variant: PropTypes.oneOf([
     'heading1',
     'heading2',

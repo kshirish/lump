@@ -64,7 +64,7 @@ const Stack = ({
 };
 
 Stack.propTypes = {
-  as: PropTypes.string,
+  as: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   direction: PropTypes.oneOf(['row', 'row-reverse', 'col', 'col-reverse']),
   justifyContent: PropTypes.oneOf([
     'flex-start',

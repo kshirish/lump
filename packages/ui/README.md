@@ -18,18 +18,15 @@
 14. ~~Grid~~
 15. ~~Tab~~
 16. ~~Accordion~~
-17. Modal
+17. ~~Modal~~
 18. ~~ButtonGroup~~
-19. Slider
-20. FormBuilder
-21. Timeline
-22. FileUpload
-23. ~~Divider~~
-24. Progress
-25. Drawer
-26. Stepper
-27. Layouts
-28. Shell
+19. FormBuilder
+20. FileUpload
+21. ~~Divider~~
+22. Drawer
+23. Stepper
+24. Layouts
+25. Shell
 
 ### hooks
 

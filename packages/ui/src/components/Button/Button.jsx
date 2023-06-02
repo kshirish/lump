@@ -42,7 +42,7 @@ const Button = ({
       spacing={1}
       alignItems="center"
       className={classNames(
-        'ui-flex ui-rounded ui-font-medium',
+        'ui-flex ui-justify-center ui-rounded ui-font-medium',
         variantClass,
         sizeClass,
         {
@@ -51,6 +51,7 @@ const Button = ({
         className,
       )}
       type="button"
+      style={{ minWidth: '80px' }}
       {...restProps}
     >
       {startIcon}

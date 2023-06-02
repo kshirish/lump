@@ -58,7 +58,7 @@ const Popup = ({
 Popup.propTypes = {
   trigger: PropTypes.node,
   className: PropTypes.string,
-  as: PropTypes.string,
+  as: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

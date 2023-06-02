@@ -8,6 +8,7 @@ export * from './Grid';
 export * from './Input';
 export * from './List';
 export * from './Loader';
+export * from './Modal';
 export * from './Paper';
 export * from './Popup';
 export * from './Radio';
