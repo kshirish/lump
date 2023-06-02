@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Stack, Text, RadioContext } from '../';
+import { Stack, Text } from '../';
+import { RadioContext } from './context';
 
 const RadioGroup = ({
   label,

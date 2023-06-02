@@ -1,10 +1,4 @@
-import React, {
-  cloneElement,
-  useRef,
-  useEffect,
-  useState,
-  useCallback,
-} from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
 import { Paper } from '../';
@@ -45,7 +39,7 @@ const Popup = ({
 
   return (
     <div ref={parentRef} style={{ position: 'relative' }}>
-      {cloneElement(trigger, {
+      {React.cloneElement(trigger, {
         onClick: handleTriggerClick,
       })}
       {show && (

@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import { Stack, RadioContext } from '../';
+import { Stack } from '../';
+import { RadioContext } from '../RadioGroup/context';
 
 const Radio = ({
   label,

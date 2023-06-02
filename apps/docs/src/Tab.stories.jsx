@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Tab } from '@lump/ui';
+import { Tabs, TabList, Tab, TabPanel } from '@lump/ui';
 
 export default {
   title: 'Example/Tab',
@@ -10,15 +10,19 @@ export const Basic = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   return (
-    <Tabs
-      activeIndex={activeIndex}
-      onChange={({ activeIndex }) => {
-        setActiveIndex(activeIndex);
-      }}
-    >
-      <Tab title="Tab Link 1">Content 1</Tab>
-      <Tab title="Tab Link 2">Content 2</Tab>
-      <Tab title="Tab Link 3">Content 3</Tab>
+    <Tabs activeIndex={activeIndex}>
+      <TabList
+        onChange={(e, index) => {
+          setActiveIndex(index);
+        }}
+      >
+        <Tab>Tab Link 1</Tab>
+        <Tab>Tab Link 2</Tab>
+        <Tab>Tab Link 3</Tab>
+      </TabList>
+      <TabPanel>Content 1</TabPanel>
+      <TabPanel>Content 2</TabPanel>
+      <TabPanel>Content 3</TabPanel>
     </Tabs>
   );
 };
