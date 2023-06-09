@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const TableHeaderCell = ({ className = '', children, ...restProps }) => {
   return (
-    <th className={classNames('ui-px-3 ui-py-2', className)} {...restProps}>
+    <th className={classNames('ui-px-3 ui-py-3', className)} {...restProps}>
       {children}
     </th>
   );

@@ -4,7 +4,10 @@ import classNames from 'classnames';
 
 const TableBody = ({ className = '', children, ...restProps }) => {
   return (
-    <tbody className={classNames('ui-bg-white', className)} {...restProps}>
+    <tbody
+      className={classNames('ui-bg-white ui-text-body', className)}
+      {...restProps}
+    >
       {children}
     </tbody>
   );

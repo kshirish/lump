@@ -6,7 +6,7 @@ const TableHeader = ({ className = '', children, ...restProps }) => {
   return (
     <thead
       className={classNames(
-        'ui-text-light4 ui-bg-light2 ui-rounded-sm',
+        'ui-text-white ui-bg-light1 ui-rounded-sm',
         className,
       )}
       {...restProps}
