@@ -20,13 +20,15 @@
 16. ~~Accordion~~
 17. ~~Modal~~
 18. ~~ButtonGroup~~
-19. FormBuilder
-20. FileUpload
-21. ~~Divider~~
-22. Drawer
-23. Stepper
-24. Layouts
-25. Shell
+19. ~~FileUpload~~
+20. ~~Divider~~
+21. ~~Table~~
+22. Form
+23. Drawer
+24. Stepper
+25. Layouts
+26. FormBuilder
+27. Shell
 
 ### hooks
 
@@ -36,11 +38,9 @@
 
 ### providers
 
-1. EnvProvider
+1. ~~EnvProvider~~
 2. AuthProvider
-3. APIProvider
-4. ThemeProvider
-5. AnalyticsProvider
+3. AnalyticsProvider
 
 ### References
 

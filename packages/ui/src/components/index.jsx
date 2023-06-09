@@ -16,6 +16,7 @@ export * from './Radio';
 export * from './RadioGroup';
 export * from './Select';
 export * from './Stack';
+export * from './Table';
 export * from './Tabs';
 export * from './Text';
 export * from './Textarea';
