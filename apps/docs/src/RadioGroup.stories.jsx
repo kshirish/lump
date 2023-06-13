@@ -1,26 +1,43 @@
 import React, { useState } from 'react';
-import { Stack, Radio, RadioGroup } from '@lump/ui';
+import { Radio, RadioGroup } from '@lump/ui';
 
 export default {
   title: 'Example/RadioGroup',
   component: RadioGroup,
 };
 
-export const Horizontal = () => (
-  <RadioGroup name="favorite" inline>
-    <Radio label="Yellow" value="Yellow" />
-    <Radio label="Blue" value="Blue" />
-    <Radio label="Maroon" value="Maroon" />
-  </RadioGroup>
-);
+export const Horizontal = () => {
+  const [value, setValue] = useState('Blue');
 
-export const Vertical = () => (
-  <RadioGroup name="favorite">
-    <Radio label="Yellow" value="Yellow" />
-    <Radio label="Blue" value="Blue" />
-    <Radio label="Maroon" value="Maroon" />
-  </RadioGroup>
-);
+  return (
+    <RadioGroup
+      name="favorite"
+      inline
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    >
+      <Radio label="Yellow" value="Yellow" />
+      <Radio label="Blue" value="Blue" />
+      <Radio label="Maroon" value="Maroon" />
+    </RadioGroup>
+  );
+};
+
+export const Vertical = () => {
+  const [value, setValue] = useState('Blue');
+
+  return (
+    <RadioGroup
+      name="favorite"
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    >
+      <Radio label="Yellow" value="Yellow" />
+      <Radio label="Blue" value="Blue" />
+      <Radio label="Maroon" value="Maroon" />
+    </RadioGroup>
+  );
+};
 
 export const Disabled = () => (
   <RadioGroup name="favorite">
@@ -30,7 +47,7 @@ export const Disabled = () => (
   </RadioGroup>
 );
 
-export const Controlled = () => {
+export const Error = () => {
   const [favorite, setFavorite] = useState('');
   const [error, setError] = useState('');
 

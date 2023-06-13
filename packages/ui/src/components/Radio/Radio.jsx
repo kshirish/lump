@@ -21,7 +21,6 @@ const Radio = ({
   return (
     <Stack spacing={1}>
       <input
-        checked={context.value === value}
         className={classNames(
           'ui-w-4 ui-h-4 ui-border-light2 ui-rounded ui-focus:ring-info ui-focus:ring-2',
           className,
@@ -30,6 +29,7 @@ const Radio = ({
         name={context.name}
         type="radio"
         value={value}
+        checked={context.value === value}
         onChange={context.onChange}
         {...restProps}
       />

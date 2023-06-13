@@ -18,7 +18,7 @@ const RadioGroup = ({
   return (
     <div className={className} {...restProps}>
       {label && (
-        <label className="ui-mb-2 ui-text-sm ui-font-medium ui-text-light1">
+        <label className="ui-block ui-mb-2 ui-text-sm ui-font-medium ui-text-light1">
           {label}
         </label>
       )}
